@@ -21,7 +21,7 @@ body {
     right: 0;
     width: 100px;
     height: 100px;
-    object-fit: contain; /* Evita que la imagen se corte */
+    object-fit: contain;
 }
 
 .footer {
@@ -37,9 +37,32 @@ body {
     margin-top: 2px;
     width: 32%;
     height: 100%;
-    object-fit: contain; /* Evita que las imágenes se corten */
+    object-fit: contain;
 }
 
 .text {
     max-width: 70%;
+}
+
+.input-section {
+    margin: 20px;
+    text-align: center;
+}
+
+#resultMessage {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Estilo para la pista oculta */
+.hint {
+    display: none; /* Oculta la pista por defecto */
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
 }
