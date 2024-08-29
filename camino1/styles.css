@@ -21,27 +21,23 @@ body {
     right: 0;
     width: 100px;
     height: 100px;
-    object-fit: cover;
+    object-fit: contain; /* Evita que la imagen se corte */
 }
 
 .footer {
     display: flex;
-    overflow: hidden;
+    justify-content: space-between;
     height: 100px;
     margin-top: auto;
+    background-color: white;
     margin-bottom: 0;
 }
 
 .footer img {
-    width: 100%;
+    margin-top: 2px;
+    width: 32%;
     height: 100%;
-    object-fit: cover;
-    animation: scroll 10s linear infinite;
-}
-
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-300%); }
+    object-fit: contain; /* Evita que las imágenes se corten */
 }
 
 .text {
