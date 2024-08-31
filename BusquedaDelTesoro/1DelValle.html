@@ -10,26 +10,35 @@
     <!-- Header fuera del contenedor central -->
     <div class="header">
         <div class="text">
-            <h1>Titulo</h1>
+            <h1>Malen</h1>
         </div>
-        <img src="milicianos.png" alt="Imagen superior derecha" class="header-img">
+        <img src="milicianos.png" alt="Imagen superior derecha">
     </div>
 
     <!-- Contenedor central que se mantiene centrado en la página -->
     <div class="container">
-        <div id="inputSection" class="input-section" data-correct-answer="respuesta correcta">
-            <input type="text" id="userInput" placeholder="Escribe tu respuesta">
+        <!-- Nuevo contenedor "reto" -->
+        <div id="retoContainer" class="hint-container">
+            <div class="hint-header">
+                <h2>Reto</h2>
+            </div>
+            <div class="hint-body">
+                <p>Grabar este video y mandárselo a Diego</p>
+                <button id="checkButton" onclick="window.location.href='https://www.youtube.com/watch?v=KGyxX5T7DjQ'">Ver Video</button>
+            </div>
+        </div>
+
+        <!-- Input Section para ingresar el código -->
+        <div id="inputSection" class="input-section" data-correct-answer="codigoCorrecto">
+            <p>Cuando lo consiga, introduzca el código aquí:</p>
+            <input type="text" id="userInput" placeholder="Escribe tu código">
             <button id="checkButton">Comprobar</button>
         </div>
 
         <p id="resultMessage"></p>
 
-        <!-- Pista oculta -->
-        <div id="hiddenHint" class="hint">
-            <p>Esta es tu siguiente pista: ...</p>
-        </div>
-
-        <div id="hintContainer" class="hint-container">
+        <!-- Pista oculta que aparece solo si el código es correcto -->
+        <div id="hiddenHint" class="hint-container" style="display:none;">
             <div class="hint-header">
                 <h2>Pista n°1</h2>
             </div>
