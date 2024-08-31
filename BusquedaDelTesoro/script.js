@@ -13,7 +13,14 @@ document.getElementById('checkButton').addEventListener('click', function() {
 
         // Limpia el mensaje de resultado
         resultMessage.innerText = "Bien! A seguir adelante";
-    } else {
+    } else if(userInput === "diegoElUltimo10DeLasFlores"){
+
+        document.getElementById('hiddenHint2').style.display = 'block';
+
+        document.getElementById('retoContainer').style.display = 'none';
+        document.getElementById('inputSection').style.display = 'none';
+    }
+    else {
         // Muestra el mensaje de respuesta incorrecta
         resultMessage.innerText = "Respuesta incorrecta. Intenta nuevamente.";
     }
