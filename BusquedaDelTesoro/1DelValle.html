@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento Móvil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header fuera del contenedor central -->
+    <div class="header">
+        <div class="text">
+            <h1>Titulo</h1>
+        </div>
+        <img src="milicianos.png" alt="Imagen superior derecha" class="header-img">
+    </div>
+
+    <!-- Contenedor central que se mantiene centrado en la página -->
+    <div class="container">
+        <div id="inputSection" class="input-section" data-correct-answer="respuesta correcta">
+            <input type="text" id="userInput" placeholder="Escribe tu respuesta">
+            <button id="checkButton">Comprobar</button>
+        </div>
+
+        <p id="resultMessage"></p>
+
+        <!-- Pista oculta -->
+        <div id="hiddenHint" class="hint">
+            <p>Esta es tu siguiente pista: ...</p>
+        </div>
+
+        <div id="hintContainer" class="hint-container">
+            <div class="hint-header">
+                <h2>Pista n°1</h2>
+            </div>
+            <div class="hint-body">
+                <p>El ruca con menos aguante está en zona sur y hay que averiguar cuál es.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer fuera del contenedor central -->
+    <div class="footer">
+        <img src="carahue.png" alt="Imagen 1">
+        <img src="malen.png" alt="Imagen 2">
+        <img src="malen.png" alt="Imagen 3">
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
