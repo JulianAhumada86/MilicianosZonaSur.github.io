@@ -12,30 +12,45 @@ body {
     align-items: center;
 }
 
-/* Estilo para la cabecera y el pie de página */
-.header, .footer {
+/* Estilo para la cabecera */
+.header {
     width: 100%;
     background-color: #4B4B4B;
     color: #F5F5F5;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Espacio entre el título y la imagen */
     align-items: center;
     position: relative;
 }
 
+/* Imagen en la cabecera */
 .header img {
     width: 100px;
     height: 100px;
     object-fit: contain;
+    margin-right: 10px; /* Espacio entre la imagen y el borde derecho */
 }
 
+/* Título en la cabecera */
+.header .text {
+    flex-grow: 1; /* Título ocupa el espacio restante */
+    margin-left: 10px; /* Espacio entre el título y el borde izquierdo */
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+/* Estilo para el pie de página */
 .footer {
-    justify-content: space-around;
+    width: 100%;
+    background-color: #4B4B4B;
+    color: #F5F5F5;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+/* Imagen en el pie de página */
 .footer img {
     width: 32%;
     height: 100%;
