@@ -3,39 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento Móvil</title>
+    <title>Atom</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header fuera del contenedor central -->
     <div class="header">
         <div class="text">
-            <h1>Titulo</h1>
+            <h1>Atom</h1>
         </div>
         <img src="milicianos.png" alt="Imagen superior derecha">
     </div>
 
-    <div>
-        <p>Este es un ejemplo de texto.</p>
+    <!-- Contenedor central que se mantiene centrado en la página -->
+    <div class="container">
+        <!-- Nuevo contenedor "reto" -->
+        <div id="retoContainer" class="hint-container">
+            <div class="hint-header">
+                <h2>Reto</h2>
+            </div>
+            <div class="hint-body">
+                <p>Pedir un folleto con los precios y hacer un avión de papel. Mandar foto a Diego  </p>
+            </div>
+        </div>
+
+        <!-- Input Section para ingresar el código -->
+        <div id="inputSection" class="input-section" data-correct-answer="bueno,bonitoybarato">
+            <p>Cuando lo consiga, introduzca el código aquí:</p>
+            <input type="text" id="userInput" placeholder="Escribe tu código">
+            <button id="checkButton">Comprobar</button>
+        </div>
+
+        <p id="resultMessage"></p>
+
+        <!-- Pista oculta que aparece solo si el código es correcto -->
+        <div id="hiddenHint" class="hint-container" style="display:none;">
+            <div class="hint-header">
+                <h2>Pista</h2>
+            </div>
+            <div class="hint-body">
+                <p>Solamente aca el Jero Carraro pudo tener mando</p>
+            </div>
+        </div>
     </div>
 
-    <div class="input-section" data-correct-answer="ruca">
-        <input type="text" id="userInput" placeholder="Escribe tu respuesta">
-        <button id="checkButton">Comprobar</button>
-    </div>
-
-    <p id="resultMessage"></p>
-
-    <!-- Pista oculta -->
-    <div id="hiddenHint" class="hint">
-        <p>El lugar donde Diego dio su primer Beso (no fue con la coti) </p>
-    </div>
-
+    <!-- Footer fuera del contenedor central -->
     <div class="footer">
         <img src="carahue.png" alt="Imagen 1">
         <img src="malen.png" alt="Imagen 2">
         <img src="malen.png" alt="Imagen 3">
     </div>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
