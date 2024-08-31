@@ -25,3 +25,21 @@ document.getElementById('checkButton').addEventListener('click', function() {
         resultMessage.innerText = "Respuesta incorrecta. Intenta nuevamente.";
     }
 });
+
+
+
+function checkAnswer(number) {
+    const userInput = document.getElementById(`userInput${number}`);
+    const correctAnswer = document.querySelector(`#hintContainer${number} .input-section`).dataset.correctAnswer;
+
+    if (userInput.value.trim().toLowerCase() === correctAnswer) {
+        document.getElementById(`hintContainer${number}`).style.display = 'none';
+        const nextHint = document.getElementById(`hintContainer${number + 1}`);
+        if (nextHint) {
+            nextHint.style.display = 'block';
+        }
+    } else {
+        alert('Respuesta incorrecta. Intenta de nuevo.');
+        userInput.value = ''; // Limpia el campo de entrada
+    }
+}

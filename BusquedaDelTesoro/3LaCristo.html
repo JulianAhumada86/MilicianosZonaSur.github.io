@@ -17,45 +17,91 @@
 
     <!-- Contenedor central que se mantiene centrado en la página -->
     <div class="container">
-        <!-- Nuevo contenedor "reto" -->
-        <div id="retoContainer" class="hint-container">
+        <!-- Contenedores de acertijos -->
+        <!-- Acertijo 1 -->
+        <div id="hintContainer1" class="hint-container">
             <div class="hint-header">
-                <h2>Reto</h2>
+                <h2>Acertijo 1</h2>
             </div>
             <div class="hint-body">
-                <p>Si vez esto es porque Diego no izo su trabajo</p>
+                <p>Tengo agujas pero no sé coser. Tengo números pero no sé leer. ¿Qué soy?</p>
+            </div>
+            <div class="input-section" data-correct-answer="reloj">
+
+                <input type="text" id="userInput1" placeholder="Escribe tu respuesta">
+                <button onclick="checkAnswer(1)">Comprobar</button>
             </div>
         </div>
 
-        <!-- Input Section para ingresar el código -->
-        <div id="inputSection" class="input-section" data-correct-answer="LaCasaDelJere">
-            <p>Cuando lo consiga, introduzca el código aquí:</p>
-            <input type="text" id="userInput" placeholder="Escribe tu código">
-            <button id="checkButton">Comprobar</button>
+        <!-- Acertijo 2 -->
+        <div id="hintContainer2" class="hint-container" style="display:none;">
+            <div class="hint-header">
+                <h2>Acertijo 2</h2>
+            </div>
+            <div class="hint-body">
+                <p>El nombre de la capilla del colegio Villa Eucaristia es Santa...</p>
+            </div>
+            <div class="input-section" data-correct-answer="maria micaela">
+                <input type="text" id="userInput2" placeholder="Escribe tu respuesta">
+                <button onclick="checkAnswer(2)">Comprobar</button>
+            </div>
         </div>
 
-        <p id="resultMessage"></p>
-
-        <!-- Pista oculta que aparece solo si el código es correcto -->
-        <div id="hiddenHint" class="hint-container" style="display:none;">
+        <!-- Acertijo 3 -->
+        <div id="hintContainer3" class="hint-container" style="display:none;">
             <div class="hint-header">
-                <h2>Pista</h2>
+                <h2>Acertijo 3</h2>
+            </div>
+            <div class="hint-body">
+                <img src="ecuacion.jpg" alt="">
+            </div>
+            <div class="input-section" data-correct-answer="101">
+
+                <input type="text" id="userInput3" placeholder="Escribe tu respuesta">
+                <button onclick="checkAnswer(3)">Comprobar</button>
+            </div>
+        </div>
+
+        <!-- Acertijo 4 -->
+        <div id="hintContainer4" class="hint-container" style="display:none;">
+            <div class="hint-header">
+                <h2>Acertijo 4</h2>
+            </div>
+            <div class="hint-body">
+                <p>Apodo del personaje mas emblematico y querido de ruca malen, <br>pista: Es templario</p>
+            </div>
+            <div class="input-section" data-correct-answer="ñañel">
+
+                <input type="text" id="userInput4" placeholder="Escribe tu respuesta">
+                <button onclick="checkAnswer(4)">Comprobar</button>
+            </div>
+        </div>
+
+        <!-- Acertijo 5 -->
+        <div id="hintContainer5" class="hint-container" style="display:none;">
+            <div class="hint-header">
+                <h2>Acertijo 5</h2>
+            </div>
+            <div class="hint-body">
+                <p>El parroco de ruca lihue es el padre... <br> (solo el nombre)</p>
+            </div>
+            <div class="input-section" data-correct-answer="pablo">
+
+                <input type="text" id="userInput5" placeholder="Escribe tu respuesta">
+                <button onclick="checkAnswer(5)">Comprobar</button>
+            </div>
+        </div>
+
+        <div id="hintContainer6" class="hint-container" style="display:none;">
+            <div class="hint-header">
+                <h2>Terminaste los acertijos, siguiente pista:</h2>
             </div>
             <div class="hint-body">
                 <p>Solamente aca el Jero Carraro pudo tener mando</p>
             </div>
         </div>
 
-        <!-- Pista oculta que aparece solo si el código es correcto -->
-        <div id="hiddenHint2" class="hint-container" style="display:none;">
-            <div class="hint-header">
-                <h2>Ganaste!</h2>
-            </div>
-            <div class="hint-body">
-                <p>Corre al Jardin del cole, ahi esta tu premio!</p>
-            </div>
-        </div> 
-
+        
     </div>
 
     <!-- Footer fuera del contenedor central -->
